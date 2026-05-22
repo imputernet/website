@@ -86,17 +86,7 @@
               class="relative inline-block"
               onmouseenter={() => (showTooltip = true)}
               onmouseleave={() => (showTooltip = false)}
-            >
-              .
-
-              {#if showTooltip}
-                <span
-                  transition:fade={{ duration: 150 }}
-                  class="absolute left-1/2 bottom-full z-30 mb-3 -translate-x-1/2 whitespace-nowrap rounded border border-neutral-800 bg-neutral-900 px-2.5 py-1.5 font-mono text-xs text-neutral-300 shadow-xl"
-                >
-                  Maybe in the future!
-                </span>
-              {/if}
+          >
             </span>
           </p>
         </div>
