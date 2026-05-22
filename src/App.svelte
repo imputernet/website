@@ -11,15 +11,18 @@
   });
 </script>
 
-<div class="relative min-h-screen bg-black text-white selection:bg-white/25 selection:text-white flex flex-col justify-between font-sans overflow-x-hidden">
+<div
+  class="relative min-h-screen bg-black text-white selection:bg-white/25 selection:text-white flex flex-col font-sans overflow-x-hidden"
+>
   <!-- Dynamic Svelte Network Background -->
   <NetworkBackground />
 
   <!-- Main Content Container -->
-  <div class="relative z-10 w-full max-w-4xl mx-auto px-6 sm:px-12 md:px-16 pt-16 sm:pt-24 md:pt-32 pb-12 flex-grow flex flex-col justify-between">
-
+  <div
+    class="relative z-10 w-full max-w-4xl mx-auto px-6 sm:px-12 md:px-16 pt-12 sm:pt-16 md:pt-20 pb-10 flex-grow flex flex-col"
+  >
     {#if visible}
-      <main class="flex flex-col space-y-12 sm:space-y-16">
+      <main class="flex flex-col space-y-8 sm:space-y-10">
 
         <!-- Logo Brand Icon -->
         <div in:fly={{ y: 15, duration: 700, delay: 100 }} class="w-fit">
@@ -63,14 +66,14 @@
         </div>
 
         <!-- Copy Sections -->
-        <div class="flex flex-col space-y-8 max-w-2xl sm:max-w-3xl">
+        <div class="flex flex-col space-y-6 max-w-2xl sm:max-w-3xl">
 
           <!-- Paragraph 1 -->
           <p
             in:fly={{ y: 15, duration: 700, delay: 220 }}
             class="text-xl sm:text-[23px] md:text-[25px] font-normal leading-[1.45] tracking-tight text-[#ECECEC]"
           >
-            We develop fast, private, and free software.
+            We develop fast, private, and free software to make the internet a less scary place.
           </p>
 
           <!-- Paragraph 2 -->
@@ -78,7 +81,7 @@
             in:fly={{ y: 15, duration: 700, delay: 460 }}
             class="text-xl sm:text-[23px] md:text-[25px] font-normal leading-[1.45] tracking-tight text-[#ECECEC]"
           >
-            We are not hiring, yet
+            Everyone at imputer are passionate about everything they do at imputer.
             <span
               class="relative inline-block"
               onmouseenter={() => (showTooltip = true)}
@@ -104,7 +107,7 @@
     {#if visible}
       <footer
         in:fade={{ duration: 1000, delay: 700 }}
-        class="mt-20 sm:mt-24 md:mt-32 flex flex-wrap gap-x-6 gap-y-3 border-t border-neutral-900/40 pt-6 text-sm font-normal tracking-tight text-zinc-500"
+        class="mt-12 sm:mt-16 md:mt-20 flex flex-wrap gap-x-6 gap-y-3 border-t border-neutral-900/40 pt-6 text-sm font-normal tracking-tight text-zinc-500"
       >
         <a
           href="https://github.com/imputernet"
@@ -125,6 +128,5 @@
         </a>
       </footer>
     {/if}
-
   </div>
 </div>
